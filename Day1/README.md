@@ -37,7 +37,7 @@ python maze.py
 An AI opponent that uses **Minimax** with **Alpha-Beta Pruning**. It never loses — best case for a human is a draw.
 
 **Files:**
-- `tictactoe.py` — game logic and AI (not run directly)
+- `tictactoe.py` — game logic and AI 
 - `runner.py` — play the game against the AI
 
 **Run it:**

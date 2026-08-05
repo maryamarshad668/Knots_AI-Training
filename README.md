@@ -1,4 +1,4 @@
-**Knots System 15-Day AI Training Cohort**!
+## Knots System 15-Day AI Training Cohort!
 
 A hands-on program to learn AI through real implementation. Over 15 days, I'll build real AI projects step by step and finish with a final capstone project.
 

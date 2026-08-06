@@ -1,5 +1,4 @@
 class Symbol:
-    """A basic fact, like 'ColMustard' or 'rain'."""
     def __init__(self, name):
         self.name = name
     def evaluate(self, model):
@@ -10,7 +9,6 @@ class Symbol:
         return self.name
 
 class Not:
-    """NOT operand — flips True/False."""
     def __init__(self, operand):
         self.operand = operand
     def evaluate(self, model):
@@ -21,7 +19,6 @@ class Not:
         return f"Not({self.operand})"
 
 class And:
-    """AND of two or more sentences — True only if ALL are True."""
     def __init__(self, *sentences):
         self.sentences = list(sentences)
     def evaluate(self, model):
@@ -39,7 +36,6 @@ class And:
         return f"And({parts})"
 
 class Or:
-    """OR of two or more sentences — True if AT LEAST ONE is True."""
     def __init__(self, *sentences):
         self.sentences = list(sentences)
     def evaluate(self, model):
@@ -57,8 +53,6 @@ class Or:
         return f"Or({parts})"
 
 class Implication:
-    """If antecedent is True, consequent must be True.
-    Only False when antecedent=True and consequent=False."""
     def __init__(self, antecedent, consequent):
         self.antecedent = antecedent
         self.consequent = consequent
@@ -72,7 +66,6 @@ class Implication:
         return f"Implication({self.antecedent} => {self.consequent})"
 
 class Biconditional:
-    """True only when both sides have the SAME truth value."""
     def __init__(self, left, right):
         self.left = left
         self.right = right

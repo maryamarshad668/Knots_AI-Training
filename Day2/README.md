@@ -9,7 +9,7 @@ Everything is built on one core idea: represent facts as logic sentences, then a
 ## Folder structure
 
 ```
-day2_project/
+Day2/
 ├── logic.py         
 ├── model_check.py     
 ├── clue_solver.py      
@@ -50,7 +50,7 @@ Implements brute-force entailment checking: it tries every True/False combinatio
 ### `clue_solver.py`
 Encodes the Clue board game as logic:
 - At least one suspect is guilty, one weapon was used, one room is the scene
-- Any card in your hand is marked `Not(card)` — since holding it proves it's innocent
+- Any card in your hand is marked `Not(card)` 
 - Extra hints revealed during play are added the same way
 
 The solver then checks every suspect/weapon/room and reports one of three answers:

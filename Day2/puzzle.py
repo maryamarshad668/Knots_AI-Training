@@ -3,8 +3,7 @@ from logic import Symbol, And, Or, Not, Biconditional
 from model_check import model_check
 
 def is_satisfiable(knowledge):
-    """Check if there's at least ONE model where knowledge is True.
-    (Brute force: try every True/False combo for every symbol.)"""
+    """Check if there's at least ONE model where knowledge is True"""
     symbols = list(knowledge.symbols())
     for values in itertools.product([True, False], repeat=len(symbols)):
         model = dict(zip(symbols, values))
@@ -16,7 +15,6 @@ AKnight = Symbol("A is a Knight")
 AKnave = Symbol("A is a Knave")
 BKnight = Symbol("B is a Knight")
 BKnave = Symbol("B is a Knave")
-
 base = And(
     Or(AKnight, AKnave),
     Not(And(AKnight, AKnave)),
@@ -27,7 +25,7 @@ base = And(
 def show_results(name, knowledge):
     print(f"--- {name} ---")
     if not is_satisfiable(knowledge):
-        print("No valid solution exists — the statements contradict themselves (a paradox).")
+        print("No valid solution exists")
         print()
         return
     print("A is Knight:", model_check(knowledge, AKnight))

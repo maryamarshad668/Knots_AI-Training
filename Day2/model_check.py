@@ -1,6 +1,4 @@
 def model_check(knowledge, query):
-    """Return True if knowledge entails query."""
-
     symbols = list(knowledge.symbols() | query.symbols())
     return check_all(knowledge, query, symbols, {})
 

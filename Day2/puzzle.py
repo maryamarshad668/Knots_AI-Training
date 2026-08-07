@@ -21,7 +21,6 @@ base = And(
     Or(BKnight, BKnave),
     Not(And(BKnight, BKnave)),
 )
-
 def show_results(name, knowledge):
     print(f"--- {name} ---")
     if not is_satisfiable(knowledge):
@@ -35,7 +34,6 @@ def show_results(name, knowledge):
     print()
 
 # Puzzle 1: A says I am a knave. B says We are different.
-
 a_statement_1 = AKnave
 b_statement_1 = Not(Biconditional(AKnight, BKnight))
 puzzle1 = And(
@@ -46,7 +44,6 @@ puzzle1 = And(
 show_results("Puzzle 1", puzzle1)
 
 # Puzzle 2: A says We are both knaves. B says nothing.
-
 a_statement_2 = And(AKnave, BKnave)
 puzzle2 = And(
     base,
@@ -55,7 +52,6 @@ puzzle2 = And(
 show_results("Puzzle 2", puzzle2)
 
 # Puzzle 3: A says We are the same kind. B says We are different kinds.
-
 a_statement_3 = Biconditional(AKnight, BKnight)     
 b_statement_3 = Not(Biconditional(AKnight, BKnight)) 
 puzzle3 = And(

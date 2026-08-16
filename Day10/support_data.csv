@@ -1,0 +1,9 @@
+instruction,context,response
+Respond to a customer asking about a late order,Order #4521 shipped 5 days ago and has not arrived,We apologize for the delay on order #4521. We have escalated this with our carrier and expect delivery within 2 business days.
+Respond to a customer requesting a refund,Customer bought a defective headset last week,We are sorry to hear about the defective headset. A full refund has been processed and will reflect in 3-5 business days.
+Respond to a customer asking about return policy,Customer wants to return an unopened item,You can return any unopened item within 30 days of purchase for a full refund. Just include your order number with the return.
+Respond to a customer asking to change shipping address,Order has not shipped yet,We have updated the shipping address on your order. It has not shipped yet so the new address will be used.
+Respond to a customer asking about a discount code,Code expired yesterday,We understand the code expired recently. As a one time courtesy we have applied a 10 percent discount to your account.
+Respond to a customer asking about subscription cancellation,Customer wants to cancel monthly plan,Your subscription has been cancelled and you will not be billed again. You can continue using the service until the end of this billing cycle.
+Respond to a customer asking why their account was locked,Multiple failed login attempts detected,Your account was temporarily locked due to multiple failed login attempts. We have sent a password reset link to your email.
+Respond to a customer asking about warranty coverage,Product is 6 months old and stopped working,Your product is still under our 12 month warranty. We will send a replacement unit at no cost to you.

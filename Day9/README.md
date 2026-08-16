@@ -1,6 +1,6 @@
-# Day 9 Project — AI Product Suite (Free/Local Edition)
+# Day 9 Project — AI Product Suite
 
-Three small apps demonstrating semantic search, image generation, and function calling — no paid API keys required.
+Three small apps demonstrating semantic search, image generation, and function calling 
 
 ```
 day9_project/
@@ -60,7 +60,7 @@ Gives a chatbot the ability to call a real function (Microsoft Learn course sear
 
 **How it works:** defines a JSON schema for `search_courses()`, passes it to the LLM as a tool, and if the model decides to call it, the script executes the real function and feeds the result back for a final natural-language answer.
 
-**Tech:** [Ollama](https://ollama.com) running Llama 3.2 locally (no key, no billing).
+**Tech:** [Ollama](https://ollama.com) running Llama 3.2 locally 
 
 **Setup:**
 ```
@@ -79,7 +79,3 @@ Ask about a course: Find me an Azure course for beginners
 ## Why free/local instead of Azure OpenAI?
 
 The original spec calls for Azure OpenAI (`text-embedding-ada-002`, `gpt-image-2`, `gpt-4o`). This version swaps each piece for a free/local equivalent so the project runs without provisioning Azure resources or paying for API usage — the core concepts (embeddings + cosine similarity, image generation + metaprompting, function calling / tool use) are identical either way.
-
-## Build Responsibly
-
-Every modality added here (search, images, function calls) is a new attack surface. Metaprompts constrain image content, and function calls should always validate arguments before executing real actions — never expose raw LLM output directly to users without a validation layer.

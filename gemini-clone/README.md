@@ -2,28 +2,31 @@
 
 A responsive AI chat application built with React.js, Context API, and the Google Gemini API. This project recreates the core experience of Gemini with a modern interface, chat history, prompt suggestions, loading animations, and AI-generated responses.
 
-# Features
-Responsive Gemini-inspired UI
-Collapsible sidebar
-Chat history
-New Chat functionality
-Interactive prompt suggestion cards
-Fixed chat input
-Enter-to-send functionality
-Google Gemini API integration
-AI-generated responses
-Loading animation
-Response formatting
-React Context API for global state management
-Responsive design for smaller screens
-Technologies Used
-React.js
-Vite
-JavaScript
-CSS
-Context API
-Google Gemini API
-@google/genai
+## Features
+
+- Responsive Gemini-inspired UI
+- Collapsible sidebar
+- Chat history
+- New Chat functionality
+- Interactive prompt suggestion cards
+- Fixed bottom chat input
+- Enter-to-send functionality
+- Google Gemini API integration
+- AI-generated responses
+- Loading animation
+- Response formatting
+- React Context API for global state management
+- Responsive design for smaller screens
+
+## Technologies Used
+
+- React.js
+- Vite
+- JavaScript
+- CSS
+- React Context API
+- Google Gemini API
+- @google/genai
 
 ## Project Structure
 
@@ -72,37 +75,37 @@ Sidebar
 
 # The sidebar provides:
 
-New Chat button
-Collapsible navigation
-Chat history
-Settings section
-Help section
-Main Dashboard
+- New Chat button
+- Collapsible navigation
+- Chat history
+- Settings section
+- Help section
+- Main Dashboard
 
 # The dashboard includes:
 
-Personalized greeting
-Prompt suggestion cards
-AI conversation area
-User messages
-AI responses
-Loading animation
-Context API
+- Personalized greeting
+- Prompt suggestion cards
+- AI conversation area
+- User messages
+- AI responses
+- Loading animation
+- Context API
 
 # The Context API manages global application state including:
 
-Input prompt
-Chat history
-Loading state
-AI response
-Sidebar state
-New chat functionality
-Gemini API
+- Input prompt
+- Chat history
+- Loading state
+- AI response
+- Sidebar state
+- New chat functionality
+- Gemini API
 
 The application uses Google's Gemini API through the @google/genai SDK to generate responses to user prompts.
 
-Screens
-Dashboard
+- Screens
+- Dashboard
 
 The main screen provides prompt suggestions and a clean Gemini-inspired interface.
 
@@ -118,27 +121,27 @@ The collapsible sidebar keeps track of recent conversations.
 
 This project was developed to practice:
 
-React component architecture
-React Hooks
-Context API
-State management
-API integration
-Environment variables
-Asynchronous JavaScript
-Loading states
-Responsive CSS
-AI application development
-Future Improvements
-Persistent chat history using local storage
-Multiple conversation sessions
-Delete chat functionality
-Markdown rendering
-Dark mode
-Voice input
-Image upload
-Streaming AI responses
-Backend API for secure Gemini API integration
-User authentication
+- React component architecture
+- React Hooks
+- Context API
+- State management
+- API integration
+- Environment variables
+- Asynchronous JavaScript
+- Loading states
+- Responsive CSS
+- AI application development
+- Future Improvements
+- Persistent chat history using local storage
+- Multiple conversation sessions
+- Delete chat functionality
+- Markdown rendering
+- Dark mode
+- Voice input
+- Image upload
+- Streaming AI responses
+- Backend API for secure Gemini API integration
+- User authentication
 
 # Disclaimer
 

@@ -1,4 +1,4 @@
-## Gemini AI Clone
+# Gemini AI Clone
 
 A responsive AI chat application built with React.js, Context API, and the Google Gemini API. This project recreates the core experience of Gemini with a modern interface, chat history, prompt suggestions, loading animations, and AI-generated responses.
 
@@ -25,7 +25,9 @@ Context API
 Google Gemini API
 @google/genai
 
-# Project Structure
+## Project Structure
+
+```text
 gemini-clone/
 ├── src/
 │   ├── assets/
@@ -43,11 +45,13 @@ gemini-clone/
 │   ├── App.jsx
 │   ├── App.css
 │   └── main.jsx
-├── .env
+├── .env.example
 ├── .gitignore
 ├── index.html
 ├── package.json
+├── package-lock.json
 └── vite.config.js
+```
 
 # How It Works
 User
